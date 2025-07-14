@@ -235,14 +235,43 @@ option accordingly.
 
 * Common Pitfalls
 
-** Lean(3)-Mode
+** Coexistence with Lean3-Mode
 
-Lean4-Mode only supports version 4 of Lean.  For editing Lean version
-3, use [[https://github.com/leanprover/lean3-mode][Lean3-Mode]], which is also known as Lean-Mode due to historical
-reasons.  In principle, it is fine to have both Lean3-Mode and
-Lean4-Mode installed at the same time.  But note that Lean3-Mode uses
-the prefix =lean-= for its symbols.  E.g. you should not use
-=lean-=-prefixed commands in a buffer with Lean4-Mode as major mode.
+Lean4-Mode only supports version 4 of Lean.  For editing code written
+in deprecated version 3, use [[https://github.com/leanprover/lean3-mode][Lean3-Mode]].  It is possible for both
+packages to be installed in parallel and used independently.  But as a
+user, it's your responsibility to set this up correctly.  You need to
+take care of following issues in particular:
+
+- Lean3-Mode uses =lean-= as prefix (e.g. for commands) whereas
+  Lean4-Mode uses =lean4-= as prefix.  When Lean4-Mode is active,
+  you must not use commands with prefix =lean-=.
+
+- Both packages associate the =.lean= file extension with their
+  respective commands.  Even more confusingly, they use different
+  functions and regular expressions to do so.
+
+  Lean3-Mode:
+  #+begin_src elisp
+  ;;;###autoload
+  (push '("\\.lean$" . lean-mode) auto-mode-alist)
+  #+end_src
+
+  Lean4-Mode:
+  #+begin_src elisp
+  ;;;###autoload
+  (add-to-list 'auto-mode-alist '("\\.lean\\'" . lean4-select-mode))
+  #+end_src
+
+  Make sure that both packages are loaded, autoloaded and configured
+  in such a way ~auto-mode-alist~ ends up with your desired value.
+
+- In particular, if you want Emacs to automatically detect whether
+  Lean3- or Lean4-Mode should be used for a particular file or
+  project, you'll need to define your own Elisp function and associate
+  it with the Lean file extension. If desired, you can even do this
+  directory locally (via the special "variable" =eval= in
+  =.dir-locals.el=).
 
 ** Partial value of ~lean4-mode-hook~ or other hook variables
 

@@ -56,7 +56,7 @@ Configuration
 
 Common Pitfalls
 
-* Lean(3)-Mode::
+* Coexistence with Lean3-Mode::
 * Partial value of lean4-mode-hook or other hook variables::
 
 Changelog
@@ -362,25 +362,50 @@ File: lean4-mode.info,  Node: Common Pitfalls,  Next: Changelog,  Prev: Configur
 
 * Menu:
 
-* Lean(3)-Mode::
+* Coexistence with Lean3-Mode::
 * Partial value of lean4-mode-hook or other hook variables::
 
 
-File: lean4-mode.info,  Node: Lean(3)-Mode,  Next: Partial value of lean4-mode-hook or other hook variables,  Up: Common Pitfalls
+File: lean4-mode.info,  Node: Coexistence with Lean3-Mode,  Next: Partial value of lean4-mode-hook or other hook variables,  Up: Common Pitfalls
 
-4.1 Lean(3)-Mode
-================
+4.1 Coexistence with Lean3-Mode
+===============================
 
-Lean4-Mode only supports version 4 of Lean.  For editing Lean version 3,
-use Lean3-Mode (https://github.com/leanprover/lean3-mode), which is also
-known as Lean-Mode due to historical reasons.  In principle, it is fine
-to have both Lean3-Mode and Lean4-Mode installed at the same time.  But
-note that Lean3-Mode uses the prefix ‘lean-’ for its symbols.  E.g.  you
-should not use ‘lean-’-prefixed commands in a buffer with Lean4-Mode as
-major mode.
+Lean4-Mode only supports version 4 of Lean.  For editing code written in
+deprecated version 3, use Lean3-Mode
+(https://github.com/leanprover/lean3-mode).  It is possible for both
+packages to be installed in parallel and used independently.  But as a
+user, it's your responsibility to set this up correctly.  You need to
+take care of following issues in particular:
+
+   • Lean3-Mode uses ‘lean-’ as prefix (e.g.  for commands) whereas
+     Lean4-Mode uses ‘lean4-’ as prefix.  When Lean4-Mode is active, you
+     must not use commands with prefix ‘lean-’.
+
+   • Both packages associate the ‘.lean’ file extension with their
+     respective commands.  Even more confusingly, they use different
+     functions and regular expressions to do so.
+
+     Lean3-Mode:
+          ;;;###autoload
+          (push '("\\.lean$" . lean-mode) auto-mode-alist)
+
+     Lean4-Mode:
+          ;;;###autoload
+          (add-to-list 'auto-mode-alist '("\\.lean\\'" . lean4-select-mode))
+
+     Make sure that both packages are loaded, autoloaded and configured
+     in such a way ‘auto-mode-alist’ ends up with your desired value.
+
+   • In particular, if you want Emacs to automatically detect whether
+     Lean3- or Lean4-Mode should be used for a particular file or
+     project, you'll need to define your own Elisp function and
+     associate it with the Lean file extension.  If desired, you can
+     even do this directory locally (via the special "variable" ‘eval’
+     in ‘.dir-locals.el’).
 
 
-File: lean4-mode.info,  Node: Partial value of lean4-mode-hook or other hook variables,  Prev: Lean(3)-Mode,  Up: Common Pitfalls
+File: lean4-mode.info,  Node: Partial value of lean4-mode-hook or other hook variables,  Prev: Coexistence with Lean3-Mode,  Up: Common Pitfalls
 
 4.2 Partial value of ‘lean4-mode-hook’ or other hook variables
 ==============================================================
@@ -533,29 +558,29 @@ File: lean4-mode.info,  Node: Version 10 from 2024-11-16,  Prev: Version 101 fro
 
 Tag Table:
 Node: Top224
-Node: Installation1749
-Node: Brief Generic Instructions2040
-Node: Detailed Native Instructions3496
-Node: Instructions for Source-Based Use-Package5646
-Node: Native vc (Emacs 30 or later)7562
-Node: Doom package!8428
-Node: Straight8898
-Node: Usage9427
-Node: lsp-mode10849
-Node: Flycheck11134
-Node: Configuration11744
-Node: lsp-mode (1)11934
-Node: Flycheck (1)12203
-Node: Common Pitfalls12688
-Node: Lean(3)-Mode12912
-Node: Partial value of lean4-mode-hook or other hook variables13536
-Node: Changelog15242
-Node: Upcoming Version15682
-Node: Version 112 from 2024-12-1017748
-Node: Version 111 from 2024-12-0218613
-Node: Version 110 from 2024-12-0119020
-Node: Version 101 from 2024-11-2119518
-Node: Version 10 from 2024-11-1619881
+Node: Installation1764
+Node: Brief Generic Instructions2055
+Node: Detailed Native Instructions3511
+Node: Instructions for Source-Based Use-Package5661
+Node: Native vc (Emacs 30 or later)7577
+Node: Doom package!8443
+Node: Straight8913
+Node: Usage9442
+Node: lsp-mode10864
+Node: Flycheck11149
+Node: Configuration11759
+Node: lsp-mode (1)11949
+Node: Flycheck (1)12218
+Node: Common Pitfalls12703
+Node: Coexistence with Lean3-Mode12942
+Node: Partial value of lean4-mode-hook or other hook variables14664
+Node: Changelog16385
+Node: Upcoming Version16825
+Node: Version 112 from 2024-12-1018891
+Node: Version 111 from 2024-12-0219756
+Node: Version 110 from 2024-12-0120163
+Node: Version 101 from 2024-11-2120661
+Node: Version 10 from 2024-11-1621024
 
 End Tag Table
 
