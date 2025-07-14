@@ -233,7 +233,7 @@ type ‘#check id’, the word ‘#check’ will be underlined, and hovering
 over it will show you the type of ‘id’.
 
    To view the proof state, run ‘lean4-info-mode’ (‘C-c C-i’).  This
-will display the ‘*Lean4 Goals*’ buffer (like the Lean Info-View pane in
+will display the ‘*Lean4 Info*’ buffer (like the Lean Info-View pane in
 VS-Code) in a separate window.
 
 Key                      Description                                              Command
@@ -447,19 +447,19 @@ Node: Native vc (Emacs 30 or later)5355
 Node: Doom-Emacs6263
 Node: Straight6689
 Node: Usage7189
-Node: lsp-mode8612
-Node: Flycheck8897
-Node: Configuration9507
-Node: lsp-mode (1)9697
-Node: Flycheck (1)9966
-Node: Common Pitfalls10451
-Node: Changelog11043
-Node: Upcoming Version11483
-Node: Version 112 from 2024-12-1013549
-Node: Version 111 from 2024-12-0214414
-Node: Version 110 from 2024-12-0114821
-Node: Version 101 from 2024-11-2115319
-Node: Version 10 from 2024-11-1615682
+Node: lsp-mode8611
+Node: Flycheck8896
+Node: Configuration9506
+Node: lsp-mode (1)9696
+Node: Flycheck (1)9965
+Node: Common Pitfalls10450
+Node: Changelog11042
+Node: Upcoming Version11482
+Node: Version 112 from 2024-12-1013548
+Node: Version 111 from 2024-12-0214413
+Node: Version 110 from 2024-12-0114820
+Node: Version 101 from 2024-11-2115318
+Node: Version 10 from 2024-11-1615681
 
 End Tag Table
 
