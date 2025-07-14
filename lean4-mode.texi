@@ -374,6 +374,10 @@ legacy version 3 of Lean for some files or projects, you could
 directory- or file-locally associate the @samp{.lean} file extension with
 Lean3-Mode in @code{auto-mode-alist}.
 @item
+The command @code{lean4-show-version} has been removed. Lean4-Mode now
+assumes Lean version 4. In order to determine the minor version, you
+may type @samp{M-! lean --version RET} or similar.
+@item
 The functions @code{lean4-input-export-translations} and
 @code{lean4-input-export-translations-to-stdout} have been removed. We
 expect that noone has been using it. If you do use it, let us know,

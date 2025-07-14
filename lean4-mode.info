@@ -367,6 +367,9 @@ Documentation:
      legacy version 3 of Lean for some files or projects, you could
      directory- or file-locally associate the ‘.lean’ file extension
      with Lean3-Mode in ‘auto-mode-alist’.
+   • The command ‘lean4-show-version’ has been removed.  Lean4-Mode now
+     assumes Lean version 4.  In order to determine the minor version,
+     you may type ‘M-! lean --version RET’ or similar.
    • The functions ‘lean4-input-export-translations’ and
      ‘lean4-input-export-translations-to-stdout’ have been removed.  We
      expect that noone has been using it.  If you do use it, let us
@@ -450,11 +453,11 @@ Node: Flycheck (1)10050
 Node: Common Pitfalls10535
 Node: Changelog11127
 Node: Upcoming Version11567
-Node: Version 112 from 2024-12-1013292
-Node: Version 111 from 2024-12-0214157
-Node: Version 110 from 2024-12-0114564
-Node: Version 101 from 2024-11-2115062
-Node: Version 10 from 2024-11-1615425
+Node: Version 112 from 2024-12-1013500
+Node: Version 111 from 2024-12-0214365
+Node: Version 110 from 2024-12-0114772
+Node: Version 101 from 2024-11-2115270
+Node: Version 10 from 2024-11-1615633
 
 End Tag Table
 

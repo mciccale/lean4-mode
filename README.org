@@ -227,6 +227,9 @@ Features:
   legacy version 3 of Lean for some files or projects, you could
   directory- or file-locally associate the =.lean= file extension with
   Lean3-Mode in ~auto-mode-alist~.
+- The command ~lean4-show-version~ has been removed. Lean4-Mode now
+  assumes Lean version 4. In order to determine the minor version, you
+  may type =M-! lean --version RET= or similar.
 - The functions ~lean4-input-export-translations~ and
   ~lean4-input-export-translations-to-stdout~ have been removed. We
   expect that noone has been using it. If you do use it, let us know,
