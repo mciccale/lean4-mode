@@ -41,7 +41,7 @@ Installation
 Instructions for Source-Based Use-Package
 
 * Native vc (Emacs 30 or later)::
-* Doom-Emacs::
+* Doom package!::
 * Straight::
 
 Usage
@@ -160,11 +160,11 @@ specify ‘lean4-mode’ as a ‘:command’.
 * Menu:
 
 * Native vc (Emacs 30 or later)::
-* Doom-Emacs::
+* Doom package!::
 * Straight::
 
 
-File: lean4-mode.info,  Node: Native vc (Emacs 30 or later),  Next: Doom-Emacs,  Up: Instructions for Source-Based Use-Package
+File: lean4-mode.info,  Node: Native vc (Emacs 30 or later),  Next: Doom package!,  Up: Instructions for Source-Based Use-Package
 
 1.3.1 Native ‘:vc’ (Emacs 30 or later)
 --------------------------------------
@@ -181,28 +181,28 @@ packages from remote source repositories.
 
      (use-package lean4-mode
        :commands lean4-mode
-       :vc (:url "https://github.com/leanprover-community/lean4-mode.git"
-            :rev :last-release
-            ;; Or, if you prefer the bleeding edge version of Lean4-Mode:
-            ;; :rev :newest
-            ))
+       :vc ( :url "https://github.com/leanprover-community/lean4-mode.git"
+             :rev :last-release
+             ;; Or, if you prefer the bleeding edge version of Lean4-Mode:
+             ;; :rev :newest
+             ))
 
 
-File: lean4-mode.info,  Node: Doom-Emacs,  Next: Straight,  Prev: Native vc (Emacs 30 or later),  Up: Instructions for Source-Based Use-Package
+File: lean4-mode.info,  Node: Doom package!,  Next: Straight,  Prev: Native vc (Emacs 30 or later),  Up: Instructions for Source-Based Use-Package
 
-1.3.2 Doom-Emacs
-----------------
+1.3.2 Doom ‘package!’
+---------------------
 
 If you use Doom-Emacs, you can place the following code in your Doom
 initialization file:
 
      (package! lean4-mode
-       :recipe (:host github
-                :repo "leanprover-community/lean4-mode"
-                :files ("*.el" "data")))
+               :recipe ( :host github
+                         :repo "leanprover-community/lean4-mode"
+                         :files ("*.el" "data")))
 
 
-File: lean4-mode.info,  Node: Straight,  Prev: Doom-Emacs,  Up: Instructions for Source-Based Use-Package
+File: lean4-mode.info,  Node: Straight,  Prev: Doom package!,  Up: Instructions for Source-Based Use-Package
 
 1.3.3 Straight
 --------------
@@ -435,27 +435,27 @@ File: lean4-mode.info,  Node: Version 10 from 2024-11-16,  Prev: Version 101 fro
 
 Tag Table:
 Node: Top224
-Node: Installation1602
-Node: Brief and Generic Instructions1845
-Node: Detailed and Concrete Instructions2794
-Node: Instructions for Source-Based Use-Package4451
-Node: Native vc (Emacs 30 or later)5172
-Node: Doom-Emacs6080
-Node: Straight6506
-Node: Usage7006
-Node: lsp-mode8428
-Node: Flycheck8713
-Node: Configuration9323
-Node: lsp-mode (1)9513
-Node: Flycheck (1)9782
-Node: Common Pitfalls10267
-Node: Changelog10859
-Node: Upcoming Version11299
-Node: Version 112 from 2024-12-1013365
-Node: Version 111 from 2024-12-0214230
-Node: Version 110 from 2024-12-0114637
-Node: Version 101 from 2024-11-2115135
-Node: Version 10 from 2024-11-1615498
+Node: Installation1605
+Node: Brief and Generic Instructions1848
+Node: Detailed and Concrete Instructions2797
+Node: Instructions for Source-Based Use-Package4454
+Node: Native vc (Emacs 30 or later)5178
+Node: Doom package!6094
+Node: Straight6564
+Node: Usage7067
+Node: lsp-mode8489
+Node: Flycheck8774
+Node: Configuration9384
+Node: lsp-mode (1)9574
+Node: Flycheck (1)9843
+Node: Common Pitfalls10328
+Node: Changelog10920
+Node: Upcoming Version11360
+Node: Version 112 from 2024-12-1013426
+Node: Version 111 from 2024-12-0214291
+Node: Version 110 from 2024-12-0114698
+Node: Version 101 from 2024-11-2115196
+Node: Version 10 from 2024-11-1615559
 
 End Tag Table
 
