@@ -373,6 +373,13 @@ the command @code{lean4-select-mode} and related code. If you still use
 legacy version 3 of Lean for some files or projects, you could
 directory- or file-locally associate the @samp{.lean} file extension with
 Lean3-Mode in @code{auto-mode-alist}.
+@item
+The functions @code{lean4-input-export-translations} and
+@code{lean4-input-export-translations-to-stdout} have been removed. We
+expect that noone has been using it. If you do use it, let us know,
+so we can reconsider our decision in case of a substantial amount of
+users. Otherwise, please just define these functions in your Emacs
+initialization file yourself.
 @end itemize
 
 @node Version 112 from 2024-12-10

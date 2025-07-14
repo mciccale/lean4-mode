@@ -227,6 +227,12 @@ Features:
   legacy version 3 of Lean for some files or projects, you could
   directory- or file-locally associate the =.lean= file extension with
   Lean3-Mode in ~auto-mode-alist~.
+- The functions ~lean4-input-export-translations~ and
+  ~lean4-input-export-translations-to-stdout~ have been removed. We
+  expect that noone has been using it. If you do use it, let us know,
+  so we can reconsider our decision in case of a substantial amount of
+  users. Otherwise, please just define these functions in your Emacs
+  initialization file yourself.
 
 ** Version 1.1.2 from 2024-12-10
 
