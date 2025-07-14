@@ -362,6 +362,11 @@ Documentation:
      that buffer-locally adds ‘delete-trailing-whitespace’ to
      ‘before-save-hook’, and add that hereby defined function to
      ‘lean4-mode-hook’.
+   • The variable ‘lean4-autodetect-lean3’ has been removed along with
+     the command ‘lean4-select-mode’ and related code.  If you still use
+     legacy version 3 of Lean for some files or projects, you could
+     directory- or file-locally associate the ‘.lean’ file extension
+     with Lean3-Mode in ‘auto-mode-alist’.
 
 
 File: lean4-mode.info,  Node: Version 112 from 2024-12-10,  Next: Version 111 from 2024-12-02,  Prev: Upcoming Version,  Up: Changelog
@@ -439,11 +444,11 @@ Node: Flycheck (1)10050
 Node: Common Pitfalls10535
 Node: Changelog11127
 Node: Upcoming Version11567
-Node: Version 112 from 2024-12-1012555
-Node: Version 111 from 2024-12-0213420
-Node: Version 110 from 2024-12-0113827
-Node: Version 101 from 2024-11-2114325
-Node: Version 10 from 2024-11-1614688
+Node: Version 112 from 2024-12-1012897
+Node: Version 111 from 2024-12-0213762
+Node: Version 110 from 2024-12-0114169
+Node: Version 101 from 2024-11-2114667
+Node: Version 10 from 2024-11-1615030
 
 End Tag Table
 

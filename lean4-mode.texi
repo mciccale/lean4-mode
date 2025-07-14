@@ -367,6 +367,12 @@ kind of use case. For example, you might want to define a function
 that buffer-locally adds @code{delete-trailing-whitespace} to
 @code{before-save-hook}, and add that hereby defined function to
 @code{lean4-mode-hook}.
+@item
+The variable @code{lean4-autodetect-lean3} has been removed along with
+the command @code{lean4-select-mode} and related code. If you still use
+legacy version 3 of Lean for some files or projects, you could
+directory- or file-locally associate the @samp{.lean} file extension with
+Lean3-Mode in @code{auto-mode-alist}.
 @end itemize
 
 @node Version 112 from 2024-12-10
