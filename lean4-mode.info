@@ -348,6 +348,12 @@ Documentation:
    • The changelog is now part of the readme (and thus of the Info
      manual).
 
+   User interface:
+   • The tool-bar menu of Lean4-Mode does not list the
+     ‘flycheck-list-errors’ anymore.  Please use the “Show all errors”
+     entry in Flycheck's menu instead.  (Fixes #91
+     (https://github.com/leanprover-community/lean4-mode/issues/91).)
+
 
 File: lean4-mode.info,  Node: Version 112 from 2024-12-10,  Next: Version 111 from 2024-12-02,  Prev: Upcoming Version,  Up: Changelog
 
@@ -424,11 +430,11 @@ Node: Flycheck (1)10050
 Node: Common Pitfalls10535
 Node: Changelog11127
 Node: Upcoming Version11567
-Node: Version 112 from 2024-12-1011811
-Node: Version 111 from 2024-12-0212676
-Node: Version 110 from 2024-12-0113083
-Node: Version 101 from 2024-11-2113581
-Node: Version 10 from 2024-11-1613944
+Node: Version 112 from 2024-12-1012088
+Node: Version 111 from 2024-12-0212953
+Node: Version 110 from 2024-12-0113360
+Node: Version 101 from 2024-11-2113858
+Node: Version 10 from 2024-11-1614221
 
 End Tag Table
 

@@ -349,6 +349,14 @@ The changelog is now part of the readme (and thus of the Info
 manual).
 @end itemize
 
+User interface:
+@itemize
+@item
+The tool-bar menu of Lean4-Mode does not list the
+@code{flycheck-list-errors} anymore. Please use the “Show all errors”
+entry in Flycheck's menu instead. (Fixes @uref{https://github.com/leanprover-community/lean4-mode/issues/91, #91}.)
+@end itemize
+
 @node Version 112 from 2024-12-10
 @section Version 1.1.2 from 2024-12-10
 
