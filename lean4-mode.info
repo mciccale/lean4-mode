@@ -3,14 +3,14 @@ lean4-mode.texi.
 
 INFO-DIR-SECTION Emacs misc features
 START-INFO-DIR-ENTRY
-* Lean4-Mode: (lean4-mode). Emacs major mode for Lean language.
+* Lean4-Mode: (lean4-mode). Emacs major mode for Lean4 language.
 END-INFO-DIR-ENTRY
 
 
 File: lean4-mode.info,  Node: Top,  Next: Installation,  Up: (dir)
 
-Lean4-Mode - Emacs major mode for Lean language
-***********************************************
+Emacs Lean4-Mode
+****************
 
 This package extends GNU Emacs (https://www.gnu.org/software/emacs/) by
 providing a major mode for editing code written in version 4 of the
@@ -226,21 +226,21 @@ File: lean4-mode.info,  Node: Usage,  Next: Configuration,  Prev: Installation, 
 2 Usage
 *******
 
-If things are working correctly, you should see the word "Lean 4" in
+If things are working correctly, you should see the word "Lean4" in
 Emacs mode-line when you open a file with ‘.lean’ extension.  Emacs will
 ask you to identify the _project_ this file belongs to.  If you then
 type ‘#check id’, the word ‘#check’ will be underlined, and hovering
 over it will show you the type of ‘id’.
 
    To view the proof state, run ‘lean4-info-mode’ (‘C-c C-i’).  This
-will display the ‘*Lean Goals*’ buffer (like the Lean Info-View pane in
+will display the ‘*Lean4 Goals*’ buffer (like the Lean Info-View pane in
 VS-Code) in a separate window.
 
 Key                      Description                                              Command
 ----------------------------------------------------------------------------------------------------------------
 ‘C-c C-k’                Echo the keystroke needed to input the symbol at point   ‘quail-show-key’
 ‘C-c C-d’                Recompile and reload imports                             ‘lean4-lsp-document-reopen’
-‘C-c C-x’ or ‘C-c C-l’   Execute Lean in stand-alone mode                         ‘lean4-execute’
+‘C-c C-x’ or ‘C-c C-l’   Execute Lean4 in stand-alone mode                        ‘lean4-execute’
 ‘C-c C-p C-l’            Builds package with lake                                 ‘lean4-lake-build’
 ‘C-c C-i’                Toggle Info-View which shows goals and errors at point   ‘lean4-info-mode’
 
@@ -438,28 +438,28 @@ File: lean4-mode.info,  Node: Version 10 from 2024-11-16,  Prev: Version 101 fro
 
 
 Tag Table:
-Node: Top223
-Node: Installation1846
-Node: Brief and Generic Instructions2089
-Node: Detailed and Concrete Instructions3038
-Node: Instructions for Source-Based Use-Package4695
-Node: Native vc (Emacs 30 or later)5416
-Node: Doom-Emacs6324
-Node: Straight6750
-Node: Usage7250
-Node: lsp-mode8673
-Node: Flycheck8958
-Node: Configuration9568
-Node: lsp-mode (1)9758
-Node: Flycheck (1)10027
-Node: Common Pitfalls10512
-Node: Changelog11104
-Node: Upcoming Version11544
-Node: Version 112 from 2024-12-1013610
-Node: Version 111 from 2024-12-0214475
-Node: Version 110 from 2024-12-0114882
-Node: Version 101 from 2024-11-2115380
-Node: Version 10 from 2024-11-1615743
+Node: Top224
+Node: Installation1785
+Node: Brief and Generic Instructions2028
+Node: Detailed and Concrete Instructions2977
+Node: Instructions for Source-Based Use-Package4634
+Node: Native vc (Emacs 30 or later)5355
+Node: Doom-Emacs6263
+Node: Straight6689
+Node: Usage7189
+Node: lsp-mode8612
+Node: Flycheck8897
+Node: Configuration9507
+Node: lsp-mode (1)9697
+Node: Flycheck (1)9966
+Node: Common Pitfalls10451
+Node: Changelog11043
+Node: Upcoming Version11483
+Node: Version 112 from 2024-12-1013549
+Node: Version 111 from 2024-12-0214414
+Node: Version 110 from 2024-12-0114821
+Node: Version 101 from 2024-11-2115319
+Node: Version 10 from 2024-11-1615682
 
 End Tag Table
 
