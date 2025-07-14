@@ -252,7 +252,7 @@ in VS-Code) in a separate window.
 @tab @code{lean4-refresh-file-dependencies}
 @item @samp{C-c C-x} or @samp{C-c C-l}
 @tab Execute Lean in stand-alone mode
-@tab @code{lean4-std-exe}
+@tab @code{lean4-execute}
 @item @samp{C-c C-p C-l}
 @tab Builds package with lake
 @tab @code{lean4-lake-build}
@@ -384,6 +384,9 @@ expect that noone has been using it. If you do use it, let us know,
 so we can reconsider our decision in case of a substantial amount of
 users. Otherwise, please just define these functions in your Emacs
 initialization file yourself.
+@item
+The command @code{lean4-std-exe} has been removed. It was just the same
+as @code{lean4-execute} which continues to exist.
 @end itemize
 
 @node Version 112 from 2024-12-10

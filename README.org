@@ -154,7 +154,7 @@ in VS-Code) in a separate window.
 |------------------------+--------------------------------------------------------+-----------------------------------|
 | =C-c C-k=              | Echo the keystroke needed to input the symbol at point | ~quail-show-key~                  |
 | =C-c C-d=              | Recompile and reload imports                           | ~lean4-refresh-file-dependencies~ |
-| =C-c C-x= or =C-c C-l= | Execute Lean in stand-alone mode                       | ~lean4-std-exe~                   |
+| =C-c C-x= or =C-c C-l= | Execute Lean in stand-alone mode                       | ~lean4-execute~                   |
 | =C-c C-p C-l=          | Builds package with lake                               | ~lean4-lake-build~                |
 | =C-c C-i=              | Toggle Info-View which shows goals and errors at point | ~lean4-toggle-info-buffer~        |
 
@@ -236,6 +236,8 @@ Features:
   so we can reconsider our decision in case of a substantial amount of
   users. Otherwise, please just define these functions in your Emacs
   initialization file yourself.
+- The command ~lean4-std-exe~ has been removed. It was just the same
+  as ~lean4-execute~ which continues to exist.
 
 ** Version 1.1.2 from 2024-12-10
 

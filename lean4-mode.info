@@ -240,7 +240,7 @@ Key                      Description                                            
 ----------------------------------------------------------------------------------------------------------------------
 ‘C-c C-k’                Echo the keystroke needed to input the symbol at point   ‘quail-show-key’
 ‘C-c C-d’                Recompile and reload imports                             ‘lean4-refresh-file-dependencies’
-‘C-c C-x’ or ‘C-c C-l’   Execute Lean in stand-alone mode                         ‘lean4-std-exe’
+‘C-c C-x’ or ‘C-c C-l’   Execute Lean in stand-alone mode                         ‘lean4-execute’
 ‘C-c C-p C-l’            Builds package with lake                                 ‘lean4-lake-build’
 ‘C-c C-i’                Toggle Info-View which shows goals and errors at point   ‘lean4-toggle-info-buffer’
 
@@ -376,6 +376,8 @@ Documentation:
      know, so we can reconsider our decision in case of a substantial
      amount of users.  Otherwise, please just define these functions in
      your Emacs initialization file yourself.
+   • The command ‘lean4-std-exe’ has been removed.  It was just the same
+     as ‘lean4-execute’ which continues to exist.
 
 
 File: lean4-mode.info,  Node: Version 112 from 2024-12-10,  Next: Version 111 from 2024-12-02,  Prev: Upcoming Version,  Up: Changelog
@@ -453,11 +455,11 @@ Node: Flycheck (1)10050
 Node: Common Pitfalls10535
 Node: Changelog11127
 Node: Upcoming Version11567
-Node: Version 112 from 2024-12-1013500
-Node: Version 111 from 2024-12-0214365
-Node: Version 110 from 2024-12-0114772
-Node: Version 101 from 2024-11-2115270
-Node: Version 10 from 2024-11-1615633
+Node: Version 112 from 2024-12-1013633
+Node: Version 111 from 2024-12-0214498
+Node: Version 110 from 2024-12-0114905
+Node: Version 101 from 2024-11-2115403
+Node: Version 10 from 2024-11-1615766
 
 End Tag Table
 
