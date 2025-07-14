@@ -384,3 +384,13 @@ Features:
 ** Version 1.0 from 2024-11-16
 
 - Specify "Version" in Emacs-Lisp library header.
+
+* Contributing
+
+When you contribute to Lean4-Mode, add a personal copyright like
+=;; Copyright (c) 2024 Firstname Lastname= to the header of respective
+files.
+
+You can use Emacs' built-in ~bug-reference-mode~ and
+~bug-reference-prog-mode~ in this repository to make mentions of
+issues like =#123= clickable.

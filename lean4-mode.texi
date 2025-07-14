@@ -37,6 +37,7 @@ on the Lean Zulip chat platform.
 * Configuration::
 * Common Pitfalls::
 * Changelog::
+* Contributing::
 
 @detailmenu
 --- The Detailed Node Listing ---
@@ -582,5 +583,16 @@ Provide README as Texi and Info manual too.
 @item
 Specify "Version" in Emacs-Lisp library header.
 @end itemize
+
+@node Contributing
+@chapter Contributing
+
+When you contribute to Lean4-Mode, add a personal copyright like
+@samp{;; Copyright (c) 2024 Firstname Lastname} to the header of respective
+files.
+
+You can use Emacs' built-in @code{bug-reference-mode} and
+@code{bug-reference-prog-mode} in this repository to make mentions of
+issues like @samp{#123} clickable.
 
 @bye

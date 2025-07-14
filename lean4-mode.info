@@ -29,6 +29,7 @@ channel on the Lean Zulip chat platform.
 * Configuration::
 * Common Pitfalls::
 * Changelog::
+* Contributing::
 
 -- The Detailed Node Listing --
 
@@ -443,7 +444,7 @@ before calling ‘add-hook’, e.g.  with ‘require’:
        (add-hook 'lean4-...-hook #'...))
 
 
-File: lean4-mode.info,  Node: Changelog,  Prev: Common Pitfalls,  Up: Top
+File: lean4-mode.info,  Node: Changelog,  Next: Contributing,  Prev: Common Pitfalls,  Up: Top
 
 5 Changelog
 ***********
@@ -554,33 +555,48 @@ File: lean4-mode.info,  Node: Version 10 from 2024-11-16,  Prev: Version 101 fro
 
    • Specify "Version" in Emacs-Lisp library header.
 
+
+File: lean4-mode.info,  Node: Contributing,  Prev: Changelog,  Up: Top
+
+6 Contributing
+**************
+
+When you contribute to Lean4-Mode, add a personal copyright like ‘;;
+Copyright (c) 2024 Firstname Lastname’ to the header of respective
+files.
+
+   You can use Emacs' built-in ‘bug-reference-mode’ and
+‘bug-reference-prog-mode’ in this repository to make mentions of issues
+like ‘#123’ clickable.
+
 
 
 Tag Table:
 Node: Top224
-Node: Installation1764
-Node: Brief Generic Instructions2055
-Node: Detailed Native Instructions3511
-Node: Instructions for Source-Based Use-Package5661
-Node: Native vc (Emacs 30 or later)7577
-Node: Doom package!8443
-Node: Straight8913
-Node: Usage9442
-Node: lsp-mode10864
-Node: Flycheck11149
-Node: Configuration11759
-Node: lsp-mode (1)11949
-Node: Flycheck (1)12218
-Node: Common Pitfalls12703
-Node: Coexistence with Lean3-Mode12942
-Node: Partial value of lean4-mode-hook or other hook variables14664
-Node: Changelog16385
-Node: Upcoming Version16825
-Node: Version 112 from 2024-12-1018891
-Node: Version 111 from 2024-12-0219756
-Node: Version 110 from 2024-12-0120163
-Node: Version 101 from 2024-11-2120661
-Node: Version 10 from 2024-11-1621024
+Node: Installation1781
+Node: Brief Generic Instructions2072
+Node: Detailed Native Instructions3528
+Node: Instructions for Source-Based Use-Package5678
+Node: Native vc (Emacs 30 or later)7594
+Node: Doom package!8460
+Node: Straight8930
+Node: Usage9459
+Node: lsp-mode10881
+Node: Flycheck11166
+Node: Configuration11776
+Node: lsp-mode (1)11966
+Node: Flycheck (1)12235
+Node: Common Pitfalls12720
+Node: Coexistence with Lean3-Mode12959
+Node: Partial value of lean4-mode-hook or other hook variables14681
+Node: Changelog16402
+Node: Upcoming Version16863
+Node: Version 112 from 2024-12-1018929
+Node: Version 111 from 2024-12-0219794
+Node: Version 110 from 2024-12-0120201
+Node: Version 101 from 2024-11-2120699
+Node: Version 10 from 2024-11-1621062
+Node: Contributing21295
 
 End Tag Table
 
