@@ -214,6 +214,15 @@ User interface:
   ~flycheck-list-errors~ anymore. Please use the “Show all errors”
   entry in Flycheck's menu instead. (Fixes [[https://github.com/leanprover-community/lean4-mode/issues/91][#91]].)
 
+Features:
+- The variable ~lean4-delete-trailing-whitespace~ has been removed
+  together with related code. Instead of reinventing the wheel,
+  Lean4-Mode demands users to use Emacs' built-in facilities for this
+  kind of use case. For example, you might want to define a function
+  that buffer-locally adds ~delete-trailing-whitespace~ to
+  ~before-save-hook~, and add that hereby defined function to
+  ~lean4-mode-hook~.
+
 ** Version 1.1.2 from 2024-12-10
 
 - Fix occasional errors like "The connected server(s) does not support

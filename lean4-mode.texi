@@ -357,6 +357,18 @@ The tool-bar menu of Lean4-Mode does not list the
 entry in Flycheck's menu instead. (Fixes @uref{https://github.com/leanprover-community/lean4-mode/issues/91, #91}.)
 @end itemize
 
+Features:
+@itemize
+@item
+The variable @code{lean4-delete-trailing-whitespace} has been removed
+together with related code. Instead of reinventing the wheel,
+Lean4-Mode demands users to use Emacs' built-in facilities for this
+kind of use case. For example, you might want to define a function
+that buffer-locally adds @code{delete-trailing-whitespace} to
+@code{before-save-hook}, and add that hereby defined function to
+@code{lean4-mode-hook}.
+@end itemize
+
 @node Version 112 from 2024-12-10
 @section Version 1.1.2 from 2024-12-10
 
